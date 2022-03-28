@@ -23,7 +23,7 @@ export class AppComponent {
     this.testService.setTest('test2');
   }
 
-  ngOndestroy() {
+  ngOnDestroy() {
     this.destroy$.next();
     this.destroy$.complete();
   }
