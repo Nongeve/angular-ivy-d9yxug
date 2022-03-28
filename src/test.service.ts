@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class TestService {
-  test: BehaviorSubject<string> = new BehaviorSubject<string>('test');
+  private test: BehaviorSubject<string> = new BehaviorSubject<string>('test');
   constructor() {}
 
   getTest() {
